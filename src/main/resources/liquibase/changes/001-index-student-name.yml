@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-index-student-name
+      author: student
+      changes:
+        - sql:
+            sql: CREATE INDEX idx_student_name ON student (name);
